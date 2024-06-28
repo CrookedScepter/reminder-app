@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-image: url("./images/background.jpg");
+    background-size: cover;
+}
+
+body {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+section {
+    background-color: #ededed;
+    padding: 10px;
+    border-radius: 5px;
+    width: 400px;
+    box-shadow: black 3px 3px 5px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+hr {
+    margin: 5px 0px;
+}
+
+h2 {
+    margin-bottom: 7px;
+}
+
+#submit-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 5px;
+    row-gap: 5px;
+    column-gap: 15px;
+}
+
+.title-subheading {
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+#new-reminder-input-text {
+    flex: 1 1 600px;
+}
+
+#new-reminder-input-date {
+    width: fit-content;
+}
+
+#new-reminder-button {
+    width: fit-content;
+    padding: 0px 3px;
+    margin-left: 5px;
+}
+
+li > p {
+    flex-grow: 4;
+}
+
+li > div {
+    color: #939393;
+    font-size: 0.85rem;
+}
+
+li > button {
+    min-width: 94px;
+}
+
+.invisible {
+    opacity: 0%;
+}
+
+.priority {
+    color: green;
+    font-weight: 600;
+}
+
+#new-reminder-input-priority {
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+
+.done-text {
+    color: green;
+    font-weight: 600;
+}
+
+@media(max-width: 450px) {
+    section {
+        width: 95%;
+    }
+
+    #submit-div {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    #new-reminder-input-text {
+        width: 100%;
+    }
+
+    #new-reminder-input-date {
+        width: fit-content;
+    }
+
+    #new-reminder-button {
+        width: fit-content;
+    }
+
+    .invisible {
+        opacity: 100%;
+    }
+}
+
+.open-sans-300 {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.open-sans-800 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
